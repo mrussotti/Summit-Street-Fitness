@@ -13,9 +13,9 @@ https://dev.azure.com/Summit-Street-Fitness/Summit%20Street%20Fitness
 
 Project Goal: Replace the role of a bodybuilding coach in the form of a website 
 Advantages:
-1) Convience. An individual will be able to get coaching at will
+1) Convenience. An individual will be able to get coaching at will
 2) Cost. The service will be free
-3) Accuracy. We will provide sources and conflicting opinions on the scientific stances we take to maxamize muscle growth
+3) Accuracy. We will provide sources and conflicting opinions on the scientific stances we take to maximize muscle growth
 
 Sprints:
 1) Minimum functional working product 
