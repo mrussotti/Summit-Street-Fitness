@@ -18,8 +18,8 @@ Advantages:
 3) Accuracy. We will provide sources and conflicting opinions on the scientific stances we take to maximize muscle growth
 
 Sprints:
-1) Minimum functional working product 
-2) Design a webpage
-3) Set up a server to run the code in these repositories
+1) Minimum functional working product (80% ready. 1/19)
+2) Design a webpage (Template picked out, need to finish redesigning it. 1/25)
+3) Set up a server to run the code in these repositories (Server set up at home. Remote access works. 1/26)
 4) Connect server to front end of the website
 5) Create a .svg image of muscle groups to display weekly fatigue and color code it based on if you need more or less volume
