@@ -1,5 +1,5 @@
 # Summit-Street-Fitness
-Hub for sub-repositories for individual features
+This repository is for our website source code and acts as a hub for sub-repositories that control individual features
 
 WorkoutSplitGenerator:
 https://github.com/mrussotti/WorkoutSplitGenerator.git
