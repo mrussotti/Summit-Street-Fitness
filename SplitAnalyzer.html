@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Elements Reference - Massively by HTML5 UP</title>
+		<title>Summit Street Fitness</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -61,7 +61,9 @@
 												<tr>
                           <td>Chest</td>
 													<td>6</td>
-													<td><input type="number" name="Chest Volume"></td>
+													<td>
+                              <input type="number" name="Chest Volume">								      
+                            </td>
 													<td>7-19</td>
 												</tr>
 												<tr>
@@ -143,14 +145,216 @@
 													<td>9-19</td>
 												</tr>
 											</tbody>
-											<tfoot>
-												<tr>
-													<!--<td colspan="2"></td>
-													<td>100.00</td>-->
-												</tr>
-											</tfoot>
 										</table>
 									</div>
+          
+                
+                <h2>Results</h2>
+									<div class="box">
+          <p id="chestResult"></p>
+          <p id="quadsResult"></p>
+          <p id="hamstringsResult"></p>
+          <p id="glutesResult"></p>
+          <p id="backResult"></p>
+          <p id="frontDeltResult"></p>
+          <p id="sideDeltResult"></p>
+          <p id="rearDeltResult"></p>
+          <p id="bicepsResult"></p>
+          <p id="tricepsResult"></p>
+          <p id="calvesResult"></p>
+          <p id="absResult"></p>
+          <p id="trapsResult"></p>
+          <p id="forearmsResult"></p>
+                    </div>
+
+              <script>
+  // Select each input field
+    let tricepsInput = document.querySelector('input[name="Triceps Volume"]');
+    let trapsInput = document.querySelector('input[name="Traps Volume"]');
+    let forearmsInput = document.querySelector('input[name="Forearms Volume"]');
+    let absInput = document.querySelector('input[name="Abs Volume"]');
+     let calvesInput = document.querySelector('input[name="Calves Volume"]');           
+     let rearDeltInput = document.querySelector('input[name="Rear-Delts Volume"]');
+     let sideDeltInput = document.querySelector('input[name="Side-Delts Volume"]');
+     let frontDeltInput = document.querySelector('input[name="Front-Delts Volume"]');
+     let bicepsInput = document.querySelector('input[name="Biceps Volume"]');
+     let chestInput = document.querySelector('input[name="Chest Volume"]');
+     let quadsInput = document.querySelector('input[name="Quads Volume"]');
+    let backInput = document.querySelector('input[name="Back Volume"]');
+    let glutesInput = document.querySelector('input[name="Glutes Volume"]');
+    let hamstringsInput = document.querySelector('input[name="Hamstrings Volume"]');
+
+  // Select the result element
+  let tricepsResult = document.getElementById('tricepsResult');
+  let trapsResult = document.getElementById('trapsResult');
+  let forearmsResult = document.getElementById('forearmsResult');
+  let absResult = document.getElementById('absResult');
+  let calvesResult = document.getElementById('calvesResult');
+  let rearDeltResult = document.getElementById('rearDeltResult');
+  let sideDeltResult = document.getElementById('sideDeltResult');
+  let frontDeltResult = document.getElementById('frontDeltResult');
+  let bicepsResult = document.getElementById('bicepsResult');
+  let chestResult = document.getElementById('chestResult');
+  let quadsResult = document.getElementById('quadsResult');
+  let backResult = document.getElementById('backResult');
+  let glutesResult = document.getElementById('glutesResult');
+  let hamstringsResult = document.getElementById('hamstringsResult');
+  
+  // Add event listener for neck input field
+  tricepsInput.addEventListener('input', function() {
+    var ans = "You have optimal volume for triceps";
+    if (tricepsInput.value < 6) {
+      var ans = "Add more volume for triceps";
+    } else if (tricepsInput.value > 19) {
+      var ans = "Reduce volume for triceps";
+    }
+    tricepsResult.textContent = ans;
+  });
+
+  // Add event listener for traps input field
+  trapsInput.addEventListener('input', function() {
+    var ans = "You have optimal volume for traps";
+    if (trapsInput.value < 4) {
+      var ans = "Add more volume for traps";
+    } else if (trapsInput.value > 24) {
+      var ans = "Reduce volume for traps";
+    }
+    trapsResult.textContent = ans;
+  });
+
+  // Add event listener for shoulders input field
+  rearDeltInput.addEventListener('input', function() {
+    var ans = "You have optimal volume for rear-delts";
+    if (rearDeltInput.value < 6) {
+      var ans = "Add more volume for rear-delts";
+    } else if (rearDeltInput.value > 17) {
+      var ans = "Reduce volume for rear-delts";
+    }
+    rearDeltResult.textContent = ans;
+  });
+
+// Add event listener for shoulders input field
+  sideDeltInput.addEventListener('input', function() {
+    var ans = "You have optimal volume for side-delts";
+    if (sideDeltInput.value < 8) {
+      var ans = "Add more volume for side-delts";
+    } else if (sideDeltInput.value > 24) {
+      var ans = "Reduce volume for side-delts";
+    }
+    sideDeltResult.textContent = ans;
+  });
+
+// Add event listener for shoulders input field
+  frontDeltInput.addEventListener('input', function() {
+    var ans = "You have optimal volume for front-delts";
+    if (frontDeltInput.value < 0) {
+      var ans = "Add more volume for front-delts";
+    } else if (frontDeltInput.value > 12) {
+      var ans = "Reduce volume for front-delts";
+    }
+    frontDeltResult.textContent = ans;
+  });
+
+  // Add event listener for chest input field
+  chestInput.addEventListener('input', function() {
+    var ans = "You have optimal volume for chest";
+    if (chestInput.value < 6) {
+      var ans = "Add more volume for chest";
+    } else if (chestInput.value > 19) {
+      var ans = "Reduce volume for chest";
+    }
+    chestResult.textContent = ans;
+  });
+
+  // Add event listener for biceps input field
+  bicepsInput.addEventListener('input', function() {
+    var ans = "You have optimal volume for biceps";
+    if (bicepsInput.value < 8) {
+      var ans = "Add more volume for biceps";
+    } else if (bicepsInput.value > 19) {
+      var ans = "Reduce volume for biceps";
+    }
+      bicepsResult.textContent = ans;
+    });
+
+        // Add event listener for forearms input field
+    forearmsInput.addEventListener('input', function() {
+      var ans = "You have optimal volume for forearms";
+      if (forearmsInput.value < 4) {
+        var ans = "Add more volume for forearms";
+      } else if (forearmsInput.value > 24) {
+        var ans = "Reduce volume for forearms";
+      }
+      forearmsResult.textContent = ans;
+    });
+    
+    // Add event listener for abs input field
+    absInput.addEventListener('input', function() {
+      var ans = "You have optimal volume for abs";
+      if (absInput.value < 8) {
+        var ans = "Add more volume for abs";
+      } else if (absInput.value > 19) {
+        var ans = "Reduce volume for abs";
+      }
+      absResult.textContent = ans;
+    });
+    
+    // Add event listener for thighs input field
+    quadsInput.addEventListener('input', function() {
+      var ans = "You have optimal volume for quads";
+      if (quadsInput.value < 8) {
+        var ans = "Add more volume for quads";
+      } else if (quadsInput.value > 17) {
+        var ans = "Reduce volume for quads";
+      }
+      quadsResult.textContent = ans;
+    });
+    
+    // Add event listener for calves input field
+    calvesInput.addEventListener('input', function() {
+      var ans = "You have optimal volume for calves";
+      if (calvesInput.value < 8) {
+        var ans = "Add more volume for calves";
+      } else if (calvesInput.value > 19) {
+        var ans = "Reduce volume for calves";
+      }
+      calvesResult.textContent = ans;
+    });          
+
+                    // Add event listener for abs input field
+    backInput.addEventListener('input', function() {
+      var ans = "You have optimal volume for back";
+      if (backInput.value < 10) {
+        var ans = "Add more volume for back";
+      } else if (backInput.value > 19) {
+        var ans = "Reduce volume for back";
+      }
+      backResult.textContent = ans;
+    });
+    
+    // Add event listener for thighs input field
+    glutesInput.addEventListener('input', function() {
+      var ans = "You have optimal volume for glutes";
+      if (glutesInput.value < 0) {
+        var ans = "Add more volume for glutes";
+      } else if (glutesInput.value > 12) {
+        var ans = "Reduce volume for glutes";
+      }
+      glutesResult.textContent = ans;
+    });
+    
+    // Add event listener for calves input field
+    hamstringsInput.addEventListener('input', function() {
+      var ans = "You have optimal volume for hamstrings";
+      if (hamstringsInput.value < 4) {
+        var ans = "Add more volume for hamstrings";
+      } else if (hamstringsInput.value > 12) {
+        var ans = "Reduce volume for hamstrings";
+      }
+      hamstringsResult.textContent = ans;
+    }); 
+      </script>
+
                 
 								<!-- Text stuff -->
                 <!--
