@@ -151,55 +151,55 @@
                 
                 <h2>Results</h2>
 									<div class="box">
-          <p id="trapsResult"></p>
           <p id="chestResult"></p>
-          <p id="bicepsResult"></p>
-          <p id="forearmsResult"></p>
-          <p id="absResult"></p>
-          <p id="calvesResult"></p>
-          <p id="tricepsResult"></p>
-          <p id="rearDeltResult"></p>
-          <p id="sideDeltResult"></p>
-          <p id="frontDeltResult"></p>
           <p id="quadsResult"></p>
-          <p id="backResult"></p>
-          <p id="glutesResult"></p>
           <p id="hamstringsResult"></p>
+          <p id="glutesResult"></p>
+          <p id="backResult"></p>
+          <p id="frontDeltResult"></p>
+          <p id="sideDeltResult"></p>
+          <p id="rearDeltResult"></p>
+          <p id="bicepsResult"></p>
+          <p id="tricepsResult"></p>
+          <p id="calvesResult"></p>
+          <p id="absResult"></p>
+          <p id="trapsResult"></p>
+          <p id="forearmsResult"></p>
                     </div>
 
               <script>
   // Select each input field
-   let tricepsInput = document.querySelector('input[name="Triceps Volume"]');
-   let trapsInput = document.querySelector('input[name="Traps Volume"]');
-   let forearmsInput = document.querySelector('input[name="Forearms Volume"]');
-   let absInput = document.querySelector('input[name="Abs Volume"]');
-   let calvesInput = document.querySelector('input[name="Calves Volume"]');           
-   let sideDeltInputrearDeltInput = document.querySelector('input[name="Rear-Delts Volume"]');
-   let sideDeltInput = document.querySelector('input[name="Side-Delts Volume"]');
-   let frontDeltInput = document.querySelector('input[name="Front-Delts Volume"]');
-   let bicepsInput = document.querySelector('input[name="Biceps Volume"]');
-   let chestInput = document.querySelector('input[name="Chest Volume"]');
-   let quadsInput = document.querySelector('input[name="Thighs Volume"]');
-  let backInput = document.querySelector('input[name="Back Volume"]');
-  let glutesDeltInput = document.querySelector('input[name="Glutes Volume"]');
-  let hamstringsInput = document.querySelector('input[name="Hamstrings Volume"]');
+    let tricepsInput = document.querySelector('input[name="Triceps Volume"]');
+    let trapsInput = document.querySelector('input[name="Traps Volume"]');
+    let forearmsInput = document.querySelector('input[name="Forearms Volume"]');
+    let absInput = document.querySelector('input[name="Abs Volume"]');
+     let calvesInput = document.querySelector('input[name="Calves Volume"]');           
+     let rearDeltInput = document.querySelector('input[name="Rear-Delts Volume"]');
+     let sideDeltInput = document.querySelector('input[name="Side-Delts Volume"]');
+     let frontDeltInput = document.querySelector('input[name="Front-Delts Volume"]');
+     let bicepsInput = document.querySelector('input[name="Biceps Volume"]');
+     let chestInput = document.querySelector('input[name="Chest Volume"]');
+     let quadsInput = document.querySelector('input[name="Quads Volume"]');
+    let backInput = document.querySelector('input[name="Back Volume"]');
+    let glutesInput = document.querySelector('input[name="Glutes Volume"]');
+    let hamstringsInput = document.querySelector('input[name="Hamstrings Volume"]');
 
   // Select the result element
   let tricepsResult = document.getElementById('tricepsResult');
-let trapsResult = document.getElementById('trapsResult');
-let forearmsResult = document.getElementById('forearmsResult');
-let absResult = document.getElementById('absResult');
-let calvesResult = document.getElementById('calvesResult');
-let rearDeltResult = document.getElementById('rearDeltResult');
-let sideDeltResult = document.getElementById('sideDeltResult');
-let frontDeltResult = document.getElementById('frontDeltResult');
-let bicepsResult = document.getElementById('bicepsResult');
-let chestResult = document.getElementById('chestResult');
-let quadsResult = document.getElementById('quadsResult');
-let backResult = document.getElementById('backResult');
-let glutesResult = document.getElementById('glutesResult');
-let hamstringsResult = document.getElementById('hamstringsResult');
-
+  let trapsResult = document.getElementById('trapsResult');
+  let forearmsResult = document.getElementById('forearmsResult');
+  let absResult = document.getElementById('absResult');
+  let calvesResult = document.getElementById('calvesResult');
+  let rearDeltResult = document.getElementById('rearDeltResult');
+  let sideDeltResult = document.getElementById('sideDeltResult');
+  let frontDeltResult = document.getElementById('frontDeltResult');
+  let bicepsResult = document.getElementById('bicepsResult');
+  let chestResult = document.getElementById('chestResult');
+  let quadsResult = document.getElementById('quadsResult');
+  let backResult = document.getElementById('backResult');
+  let glutesResult = document.getElementById('glutesResult');
+  let hamstringsResult = document.getElementById('hamstringsResult');
+  
   // Add event listener for neck input field
   tricepsInput.addEventListener('input', function() {
     var ans = "You have optimal volume for triceps";
@@ -208,7 +208,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
     } else if (tricepsInput.value > 19) {
       var ans = "Reduce volume for triceps";
     }
-    tricepsResult.textContent = ans.textContent;
+    tricepsResult.textContent = ans;
   });
 
   // Add event listener for traps input field
@@ -219,7 +219,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
     } else if (trapsInput.value > 24) {
       var ans = "Reduce volume for traps";
     }
-    trapsResult.textContent = ans.textContent;
+    trapsResult.textContent = ans;
   });
 
   // Add event listener for shoulders input field
@@ -230,7 +230,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
     } else if (rearDeltInput.value > 17) {
       var ans = "Reduce volume for rear-delts";
     }
-    rearDeltResult .textContent = ans.textContent;
+    rearDeltResult.textContent = ans;
   });
 
 // Add event listener for shoulders input field
@@ -241,7 +241,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
     } else if (sideDeltInput.value > 24) {
       var ans = "Reduce volume for side-delts";
     }
-    sideDeltResult.textContent = ans.textContent;
+    sideDeltResult.textContent = ans;
   });
 
 // Add event listener for shoulders input field
@@ -252,7 +252,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
     } else if (frontDeltInput.value > 12) {
       var ans = "Reduce volume for front-delts";
     }
-    frontDeltResult.textContent = ans.textContent;
+    frontDeltResult.textContent = ans;
   });
 
   // Add event listener for chest input field
@@ -263,7 +263,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
     } else if (chestInput.value > 19) {
       var ans = "Reduce volume for chest";
     }
-    chestResult.textContent = ans.textContent;
+    chestResult.textContent = ans;
   });
 
   // Add event listener for biceps input field
@@ -274,7 +274,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
     } else if (bicepsInput.value > 19) {
       var ans = "Reduce volume for biceps";
     }
-      bicepsResult .textContent = ans.textContent;
+      bicepsResult.textContent = ans;
     });
 
         // Add event listener for forearms input field
@@ -285,7 +285,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
       } else if (forearmsInput.value > 24) {
         var ans = "Reduce volume for forearms";
       }
-      forearmsResult.textContent = ans.textContent;
+      forearmsResult.textContent = ans;
     });
     
     // Add event listener for abs input field
@@ -296,7 +296,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
       } else if (absInput.value > 19) {
         var ans = "Reduce volume for abs";
       }
-      absResult.textContent = ans.textContent;
+      absResult.textContent = ans;
     });
     
     // Add event listener for thighs input field
@@ -307,7 +307,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
       } else if (quadsInput.value > 17) {
         var ans = "Reduce volume for quads";
       }
-      quadsResult.textContent = ans.textContent;
+      quadsResult.textContent = ans;
     });
     
     // Add event listener for calves input field
@@ -318,7 +318,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
       } else if (calvesInput.value > 19) {
         var ans = "Reduce volume for calves";
       }
-      result.textContent = ans.textContent;
+      calvesResult.textContent = ans;
     });          
 
                     // Add event listener for abs input field
@@ -329,7 +329,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
       } else if (backInput.value > 19) {
         var ans = "Reduce volume for back";
       }
-      backResult.textContent = ans.textContent;
+      backResult.textContent = ans;
     });
     
     // Add event listener for thighs input field
@@ -340,7 +340,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
       } else if (glutesInput.value > 12) {
         var ans = "Reduce volume for glutes";
       }
-      glutesResult.textContent = ans.textContent;
+      glutesResult.textContent = ans;
     });
     
     // Add event listener for calves input field
@@ -351,7 +351,7 @@ let hamstringsResult = document.getElementById('hamstringsResult');
       } else if (hamstringsInput.value > 12) {
         var ans = "Reduce volume for hamstrings";
       }
-      hamstringsResult.textContent = ans.textContent;
+      hamstringsResult.textContent = ans;
     }); 
       </script>
 
