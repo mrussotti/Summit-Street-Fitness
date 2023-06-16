@@ -1,16 +1,13 @@
 # Summit-Street-Fitness
-This repository is for our website source code and acts as a hub for sub-repositories that control individual features
+This repo is depreciated, please see the kink below for the active version
 
 *** We are working on rebuilding the website in ReactJS at https://github.com/mrussotti/Summit-Street-Fitness-2.0.git
 
 
 Website: https://Summit-Street-Fitness-Website.mrussotti.repl.co
 
-WorkoutSplitGenerator:
-https://github.com/mrussotti/WorkoutSplitGenerator.git
 
-Split Analyzer:
-https://github.com/Neal-dandrea/Workout-Analysis.git
+
 
 DevOps board:
 https://dev.azure.com/Summit-Street-Fitness/Summit%20Street%20Fitness
@@ -22,9 +19,3 @@ Advantages:
 2) Cost. The service will be free
 3) Accuracy. We will provide sources and conflicting opinions on the scientific stances we take to maximize muscle growth
 
-Sprints:
-1) Minimum functional working product (80% ready. 1/19)
-2) Design a webpage (Template picked out, need to finish redesigning it. 1/25)
-3) Set up a server to run the code in these repositories (Server set up at home. Remote access works. 1/26)
-4) Connect server to front end of the website
-5) Create a .svg image of muscle groups to display weekly fatigue and color code it based on if you need more or less volume
